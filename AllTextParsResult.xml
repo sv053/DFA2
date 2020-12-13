@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<ArrayOfOutputUnit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <OutputUnit>
+    <Haystack>gvhgj </Haystack>
+    <VarTypeName> char 4</VarTypeName>
+    <Result />
+  </OutputUnit>
+  <OutputUnit>
+    <Haystack>..short                   int r2d2 [  ]     [   8 ]  </Haystack>
+    <VarTypeName> </VarTypeName>
+    <Result />
+  </OutputUnit>
+  <OutputUnit>
+    <Haystack>true   long wert[]  </Haystack>
+    <VarTypeName> </VarTypeName>
+    <Result />
+  </OutputUnit>
+  <OutputUnit>
+    <Haystack>Let’s short int start [][ with a new'''  char W </Haystack>
+    <VarTypeName />
+    <Result />
+  </OutputUnit>
+  <OutputUnit>
+    <Haystack>1122222 bool isTrue[  5]  [   ],po,  fta    </Haystack>
+    <VarTypeName> </VarTypeName>
+    <Result />
+  </OutputUnit>
+  <OutputUnit>
+    <Haystack>:Add long int p15623 long  int 0.259766+</Haystack>
+    <VarTypeName />
+    <Result />
+  </OutputUnit>
+  <OutputUnit>
+    <Haystack>,14 bool har However char , bool you’ll   </Haystack>
+    <VarTypeName />
+    <Result />
+  </OutputUnit>
+  <OutputUnit>
+    <Haystack>ts.</Haystack>
+    <VarTypeName>char</VarTypeName>
+    <Result />
+  </OutputUnit>
+</ArrayOfOutputUnit>

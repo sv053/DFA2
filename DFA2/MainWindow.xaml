@@ -1,0 +1,60 @@
+﻿<Window x:Class="DFA2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DFA2"
+        mc:Ignorable="d"
+        Title="ТЯПиМТ_ЛР1_вар1" Height="690" Width="1100">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="480"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="660"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" Margin="5" Background="Gainsboro">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition MinHeight="200"/>
+            </Grid.RowDefinitions>
+            <Border BorderBrush="DimGray" BorderThickness="1" SnapsToDevicePixels="True" Margin="0,0,0,-118">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Margin="10">
+                        <RadioButton x:Name="parseAllRb" GroupName="inputDataRbs" Margin="10" IsChecked="True" Checked="parseAllRb_Checked"/>
+                        <Label Content="Исходный текст (Pars\parsData.txt):" HorizontalAlignment="Center"/>
+                        <ListBox x:Name="fileDataTb" Width="Auto"  Height="Auto" />
+                        <Button x:Name="startParseAllBtn" Content="Разобрать всё" Width="120" Margin="20" Cursor="Hand" Click="startParseAllBtn_Click"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+            <Border BorderBrush="DimGray" BorderThickness="1" SnapsToDevicePixels="True"
+                    Grid.Row="1" Margin="0,127,0,10">
+                <StackPanel Margin="10">
+                    <RadioButton x:Name="parseStrRb" GroupName="inputDataRbs" Margin="10" Checked="parseStrRb_Checked" 
+                             Unchecked="parseStrRb_Unchecked"/>
+                    <Label Content="Строка для разбора:" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="inputStringTb" Width="Auto" Margin="10" 
+                         Height="Auto" TextWrapping="Wrap" IsEnabled="False"/>
+                    <Button x:Name="startParseStringBtn" Content="Разобрать строку" Cursor="Hand"
+                        Width="120" Margin="20" IsEnabled="False" Click="startParseStringBtn_Click"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <ScrollViewer Grid.Row="1" Grid.Column="2" VerticalScrollBarVisibility="Auto">
+            <StackPanel  Margin="5" Background="WhiteSmoke">
+                <Label Content="Результаты разбора" Margin="10"  HorizontalAlignment="Center"/>
+
+                <DataGrid x:Name="outputDg" />
+                <DataGrid x:Name="outputDg1"/>
+                <TextBlock x:Name="testRes" Margin="20"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
